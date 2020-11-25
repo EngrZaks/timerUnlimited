@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Countdown Timer</title>
+      <link
+         href="https://fonts.googleapis.com/css?family=Inconsolata"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <button
+         class="confirm"
+         style="
+            background: red;
+            font-size: large;
+            font-weight: bold;
+            padding: 5px;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            border-radius: 5px;
+            display: none;
+         "
+      >
+         confirm
+      </button>
+      <div class="timer">
+         <div class="timer__controls">
+            <button data-time="20" class="timer__button">20 Secs</button>
+            <button data-time="300" class="timer__button">Short Break</button>
+            <button data-time="900" class="timer__button">Quick 15</button>
+            <button data-time="1200" class="timer__button">Snack 20</button>
+            <button data-time="3600" class="timer__button">Lunch Break</button>
+            <button class="add">+</button><button class="remove">-</button>
+            <form name="customForm" id="custom">
+               <input type="text" name="minutes" placeholder="Enter Minutes" />
+            </form>
+         </div>
+         <div class="display">
+            <h1 class="display__time-left"></h1>
+            <p class="display__end-time"></p>
+         </div>
+         <div
+            style="
+               color: white;
+               background: blue;
+               margin: 0 auto;
+               padding: 4px;
+               margin-bottom: 60px;
+               font-size: 1.4em;
+               border-radius: 10px;
+               font-family: cursive;
+               /* font-weight: bold; */
+            "
+         >
+            made with <span style="color: red"> ❤ </span>by Zaks
+         </div>
+      </div>
+      <div class="add-form">
+         <div class="close">x</div>
+         <h2>Personalize your button</h2>
+         <form name="add">
+            <input
+               type="text"
+               name="buttonname"
+               placeholder="Name of your button"
+            />
+            <input
+               type="text"
+               name="duration"
+               placeholder="Duration in minutes"
+            />
+            <input
+               type="text"
+               name="color"
+               placeholder="Color of your button"
+            />
+            <input type="submit" name="" value="Create" />
+         </form>
+      </div>
+
+      <audio class="audio" src="./Wecker-sound.mp3"></audio>
+      <script src="scripts.js"></script>
+   </body>
+</html>
