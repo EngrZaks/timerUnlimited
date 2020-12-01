@@ -157,10 +157,28 @@ function deleteButton(buttonToDelete) {
          });
       }) ||
       remove.addEventListener("click", function () {
-         buttonToDelete.addEventListener("click", () => {
-            stopButton.click();
-            buttonToDelete.style.display = "none";
-            console.log(buttonToDelete);
+         let clickStop = true;
+         buttonToDelete.forEach((button) => {
+            function deleteIt() {
+               if (clickStop) {
+                  stopButton.click();
+               }
+               // button.style.display = "none";
+               button.style.border = "3px solid white";
+               button.classList.add("delete");
+            }
+            button.addEventListener("click", deleteIt);
+         });
+         const confirm = document.querySelector(".confirm");
+         confirm.style.display = "block";
+         confirm.addEventListener("click", (e) => {
+            e.preventDefault();
+            var selectedToRemove = document.querySelectorAll(".delete");
+            selectedToRemove.forEach((button) => {
+               button.style.display = "none";
+            });
+            clickStop = false;
+            e.target.style.display = "none";
          });
       });
 }
