@@ -1,6 +1,6 @@
 {
    "name": "A robust count down timer by @DevZaks",
-   "short_name": "ZakGram",
+   "short_name": "ZakTimer",
    "start_url": "/index.html",
    "scop": ".",
    "display": "standalone",
@@ -12,9 +12,14 @@
    "orientation": "portrait-primary",
    "icons": [
       {
-         "src": "/src/images/icon-48x48.png",
+         "src": "app-icon-48x48.png",
          "type": "image/png",
          "sizes": "48x48"
+      },
+      {
+         "src": "app-icon-76x76.png",
+         "type": "image/png",
+         "sizes": "76x76"
       }
    ],
    "related_applications": [{ "platform": "play", "url": "", "id": "" }]
