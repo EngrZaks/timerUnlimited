@@ -1,0 +1,21 @@
+{
+   "name": "A robust count down timer by @DevZaks",
+   "short_name": "ZakGram",
+   "start_url": "/index.html",
+   "scop": ".",
+   "display": "standalone",
+   "background_color": "#fff",
+   "theme_color": "#3f51b5",
+   "descriptio": "App made by Zaks to make you more productive",
+   "dir": "ltr",
+   "lang": "en-US",
+   "orientation": "portrait-primary",
+   "icons": [
+      {
+         "src": "/src/images/icon-48x48.png",
+         "type": "image/png",
+         "sizes": "48x48"
+      }
+   ],
+   "related_applications": [{ "platform": "play", "url": "", "id": "" }]
+}
