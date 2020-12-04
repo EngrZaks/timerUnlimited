@@ -12,12 +12,12 @@
    "orientation": "portrait-primary",
    "icons": [
       {
-         "src": "app-icon-48x48.png",
+         "src": "/icons/app-icon-48x48.png",
          "type": "image/png",
          "sizes": "48x48"
       },
       {
-         "src": "app-icon-76x76.png",
+         "src": "/icons/app-icon-76x76.png",
          "type": "image/png",
          "sizes": "76x76"
       }
